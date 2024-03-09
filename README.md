@@ -31,9 +31,6 @@ This notebook is organized into different sections:
 - Fine-tune LMs for Sentiment Analysis (BERT, RoBERTa, AlBERT, DistilBERT...):
 
   - Fine-tuning pre-trained language models for sentiment analysis using transformers library.
-- Model Evaluation & Explainability:
 
-  - Evaluating models and using SHAP for model interpretability.
 - Pipeline:
-
   - Using pre-trained models to perform sentiment analysis on a set of randomly selected financial phrases.

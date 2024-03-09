@@ -415,8 +415,7 @@ class FinancialSentimentAnalysis:
         RoBERTa_results = []
         AlBERT_results = []
 
-        indices = np.random.randint(
-            round(len(self.dataset["train"]) * .8), len(self.dataset["train"])-1, 10)
+        indices = np.random.randint(0, len(self.dataset["train"])-1, 10)
         phrases = [self.dataset["train"]["sentence"][i] for i in indices]
         results = [self.dataset["train"]["label"][i] for i in indices]
 
@@ -436,4 +435,3 @@ class FinancialSentimentAnalysis:
 
         print(f'BERT : {check_predict(BERT_results, results)}', f'RoBERTa : {check_predict(RoBERTa_results, results)}',
               f'AlBERT : {check_predict(AlBERT_results, results)}', sep="\n")
-    
